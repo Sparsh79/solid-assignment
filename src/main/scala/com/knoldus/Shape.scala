@@ -2,6 +2,10 @@ trait Shape {
   val width: Double
   val height: Double
 
+  /**
+   *
+   * @return returns the area
+   */
   def area: Double = {
     width * height
   }
@@ -9,7 +13,7 @@ trait Shape {
 
 object Shape {
   def main(args: Array[String]): Unit = {
-    val objSquare = new Square(10)
+    val objSquare = new Square(100)
     println("area of square: " + objSquare.area)
     val objRectangle = new Rectangle(10, 20)
     println("area of rectangle: " + objRectangle.area)
