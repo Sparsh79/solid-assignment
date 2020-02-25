@@ -7,16 +7,6 @@ trait Shape {
   }
 }
 
-class Square(side: Double) extends Shape {
-  override val height: Double = side
-  override val width: Double = side
-}
-
-class Rectangle(length: Double, breadth: Double) extends Shape {
-  override val width: Double = length
-  override val height: Double = breadth
-}
-
 object Shape {
   def main(args: Array[String]): Unit = {
     val objSquare = new Square(10)
